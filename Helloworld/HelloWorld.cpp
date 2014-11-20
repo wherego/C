@@ -11,15 +11,16 @@ Description:
 #include<iostream>
 #include<string>
 using namespace std;
-/**************
-函数名：Sayhello
-功能：函数功能为输出Helloworld c++ 
-无输入 输出helloworld  无返回 
-***************/ 
+
+///函数名：Sayhello
+///功能：函数功能为输出Helloworld c++ 
+///无输入 输出helloworld  无返回 
+
 void SayHello()
    { 
-    const string kconst="i was a const";   //定义一个常字符串 
-    string hi_world="hello world c++";
+      ///定义一个常字符串 
+    const string kconst="i was a const";   
+    string hi_world="hello world c++";  ///定义一个变量
     cout<<hi_world<<kconst;
    } 
 int main()
