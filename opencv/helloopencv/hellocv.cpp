@@ -1,29 +1,25 @@
-    //-----------------------------------【程序说明】----------------------------------------------
-    //  程序名称:：【OpenCV入门教程之三】图像的载入，显示与输出 一站式完全解析 博文配套源码
-    // VS2010版   OpenCV版本：2.4.8
-    //      2014年3月5日 Create by 浅墨
-    //  描述： 图像的载入，显示与输出 一站式剖析   配套源码
-    //  图片素材出处：dota2原画圣堂刺客 dota2 logo  动漫人物
-    //------------------------------------------------------------------------------------------------
 
 
-    #include<opencv2/core/core.hpp>
-    #include<opencv2/highgui/highgui.hpp>
+#include<opencv2/core/core.hpp>
+#include<opencv2/highgui/highgui.hpp>
+#include "first.hpp"
+#include "ex2.hpp"
+using namespace cv;
+using namespace std;
 
-    using namespace cv;
 
+int main(){
 
-    int main( )
-    {
-    //-----------------------------------【一、图像的载入和显示】--------------------------------------
-    //     描述：以下三行代码用于完成图像的载入和显示
-    //--------------------------------------------------------------------------------------------------
+first();
 
-    Mat girl=imread("D:\\123.jpg"); //载入图像到Mat
-    namedWindow("动漫图"); //创建一个名为 "【1】动漫图"的窗口
-    imshow("动漫图",girl);//显示名为 "【1】动漫图"的窗口
+system("color 5E");
 
-    waitKey();
+          if(ROI_AddImage()&& LinearBlending( )&&ROI_LinearBlending( ))
+          {
+                 cout<<endl<<"嗯。好了，得出了你需要的图像~! : )";
+          }
 
-    return 0;
-    }
+          waitKey(0);
+
+return 0;
+}
